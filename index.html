@@ -6,12 +6,15 @@
 <body>
 
 <h1>This is my page</h1>
-<h2> this is testing file </h2>
-<p>This is a testing.</p>
-<p>This Project is a sucesss</p>
-  <p> testing </p>
-creating a table
-after that validating it
-tetsing 435
+<h2>This page is loaded using a nginx server </h2>
+<p>nginx server is inside a docker container </p>
+<p>Docker container is created via Jenkins </p>
+<p>Jenkins will act as a centralized location for all the integration</p>
+  <h2> <p>The flow is </p></h2>
+  <h3> <p> When we do some changes and commit the changes in the Git Reprository <br>
+           Jenkins jobs will get triggered automatically after the commit <br>
+           Jenkins first create an NGINX docker image with the current files <br>
+           Jenkins then delete the old docker container and create a new docker container with the udpated files
+    </p></h3>
 </body>
 </html>
